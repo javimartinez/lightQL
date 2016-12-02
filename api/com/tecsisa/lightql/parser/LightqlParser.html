@@ -1,0 +1,1091 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>LightqlParser - com.tecsisa.lightql.parser.LightqlParser</title>
+          <meta name="description" content="LightqlParser - com.tecsisa.lightql.parser.LightqlParser" />
+          <meta name="keywords" content="LightqlParser com.tecsisa.lightql.parser.LightqlParser" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'com.tecsisa.lightql.parser.LightqlParser';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="LightqlParser$.html" title="See companion object"><img alt="Trait/Object" src="../../../../lib/trait_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="com">com</a>.<a href="../../package.html" class="extype" name="com.tecsisa">tecsisa</a>.<a href="../package.html" class="extype" name="com.tecsisa.lightql">lightql</a>.<a href="package.html" class="extype" name="com.tecsisa.lightql.parser">parser</a></p>
+        <h1><a href="LightqlParser$.html" title="See companion object">LightqlParser</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="LightqlParser$.html" title="See companion object">object LightqlParser</a>
+            | <a href="package.html" class="extype" name="com.tecsisa.lightql.parser">package parser</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightqlParser</span><span class="result"> extends <a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a> with <a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a>, <a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a>, <a href="Helpers.html" class="extype" name="com.tecsisa.lightql.parser.Helpers">Helpers</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="LightqlParser$.html" class="extype" name="com.tecsisa.lightql.parser.LightqlParser">LightqlParser</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.tecsisa.lightql.parser.LightqlParser"><span>LightqlParser</span></li><li class="in" name="com.tecsisa.lightql.parser.Operators"><span>Operators</span></li><li class="in" name="com.tecsisa.lightql.parser.BasicParsers"><span>BasicParsers</span></li><li class="in" name="com.tecsisa.lightql.parser.Helpers"><span>Helpers</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.tecsisa.lightql.parser.Helpers.NamedFunction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NamedFunction[T,V]extendsT=&gt;VwithProductwithSerializable"></a>
+      <a id="NamedFunction[T,V]:NamedFunction[T,V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Helpers$NamedFunction.html"><span class="name">NamedFunction</span></a><span class="tparams">[<span name="T">T</span>, <span name="V">V</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="com.tecsisa.lightql.parser.Helpers.NamedFunction.T">T</span>) ⇒ <span class="extype" name="com.tecsisa.lightql.parser.Helpers.NamedFunction.V">V</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends (<span class="extype" name="com.tecsisa.lightql.parser.Helpers.NamedFunction.T">T</span>) ⇒ <span class="extype" name="com.tecsisa.lightql.parser.Helpers.NamedFunction.V">V</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.Helpers@NamedFunction[T,V]extendsT=&gt;VwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Helpers.html" class="extype" name="com.tecsisa.lightql.parser.Helpers">Helpers</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Helpers#Digits" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Digits:Helpers.this.NamedFunction[Char,Boolean]"></a>
+      <a id="Digits:NamedFunction[Char,Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Digits</span><span class="result">: <a href="#NamedFunction[T,V]extendsT=&gt;VwithProductwithSerializable" class="extmbr" name="com.tecsisa.lightql.parser.Helpers.NamedFunction">NamedFunction</a>[<span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@Digits:Helpers.this.NamedFunction[Char,Boolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Helpers.html" class="extype" name="com.tecsisa.lightql.parser.Helpers">Helpers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Helpers#Whitespace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Whitespace:Helpers.this.NamedFunction[Char,Boolean]"></a>
+      <a id="Whitespace:NamedFunction[Char,Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Whitespace</span><span class="result">: <a href="#NamedFunction[T,V]extendsT=&gt;VwithProductwithSerializable" class="extmbr" name="com.tecsisa.lightql.parser.Helpers.NamedFunction">NamedFunction</a>[<span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@Whitespace:Helpers.this.NamedFunction[Char,Boolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Helpers.html" class="extype" name="com.tecsisa.lightql.parser.Helpers">Helpers</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#charSeq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="charSeq:fastparse.all.Parser[Unit]"></a>
+      <a id="charSeq:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">charSeq</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@charSeq:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Operators#clauseOperator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clauseOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.BinaryOperator,Char,String]"></a>
+      <a id="clauseOperator:Parser[BinaryOperator,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clauseOperator</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<a href="../ast/BinaryOperator.html" class="extype" name="com.tecsisa.lightql.ast.BinaryOperator">BinaryOperator</a>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@clauseOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.BinaryOperator,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.LightqlParser#clauseTree" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="clauseTree:fastparse.noApi.Parser[com.tecsisa.lightql.ast.ClauseTree]"></a>
+      <a id="clauseTree:fastparse.noApi.Parser[ClauseTree]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clauseTree</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.noApi.Parser</span>[<a href="../ast/ClauseTree.html" class="extype" name="com.tecsisa.lightql.ast.ClauseTree">ClauseTree</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@clauseTree:fastparse.noApi.Parser[com.tecsisa.lightql.ast.ClauseTree]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">ClauseTree section</p>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#closeBracket" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="closeBracket:fastparse.all.Parser[Unit]"></a>
+      <a id="closeBracket:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">closeBracket</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@closeBracket:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#closeParen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="closeParen:fastparse.all.Parser[Unit]"></a>
+      <a id="closeParen:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">closeParen</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@closeParen:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#closeParenLah" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="closeParenLah:fastparse.all.Parser[Unit]"></a>
+      <a id="closeParenLah:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">closeParenLah</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@closeParenLah:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#dMHms" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dMHms:fastparse.all.Parser[Unit]"></a>
+      <a id="dMHms:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dMHms</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@dMHms:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#date" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="date:fastparse.core.Parser[org.joda.time.DateTime,Char,String]"></a>
+      <a id="date:Parser[DateTime,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">date</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<span class="extype" name="org.joda.time.DateTime">DateTime</span>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@date:fastparse.core.Parser[org.joda.time.DateTime,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#dateFormat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dateFormat:fastparse.all.Parser[Unit]"></a>
+      <a id="dateFormat:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dateFormat</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@dateFormat:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Helpers#dateTimeFormatter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dateTimeFormatter:org.joda.time.format.DateTimeFormatter"></a>
+      <a id="dateTimeFormatter:DateTimeFormatter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dateTimeFormatter</span><span class="result">: <span class="extype" name="org.joda.time.format.DateTimeFormatter">DateTimeFormatter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@dateTimeFormatter:org.joda.time.format.DateTimeFormatter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Helpers.html" class="extype" name="com.tecsisa.lightql.parser.Helpers">Helpers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#digits" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="digits:fastparse.all.Parser[Unit]"></a>
+      <a id="digits:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">digits</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@digits:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#double" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="double:fastparse.core.Parser[Double,Char,String]"></a>
+      <a id="double:Parser[Double,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">double</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@double:fastparse.core.Parser[Double,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Operators#eqOperator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eqOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.EqualityOperator,Char,String]"></a>
+      <a id="eqOperator:Parser[EqualityOperator,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eqOperator</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<a href="../ast/EqualityOperator.html" class="extype" name="com.tecsisa.lightql.ast.EqualityOperator">EqualityOperator</a>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@eqOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.EqualityOperator,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a></dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#integer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="integer:fastparse.core.Parser[Int,Char,String]"></a>
+      <a id="integer:Parser[Int,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">integer</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@integer:fastparse.core.Parser[Int,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#integral" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="integral:fastparse.all.Parser[Unit]"></a>
+      <a id="integral:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">integral</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@integral:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#list" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="list[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[List[T]]"></a>
+      <a id="list[T](fastparse.all.Parser[T]):fastparse.all.Parser[List[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">list</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="com.tecsisa.lightql.parser.BasicParsers.list.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="com.tecsisa.lightql.parser.BasicParsers.list.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@list[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[List[T]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Operators#logicOperator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logicOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.LogicOperatorwithcom.tecsisa.lightql.ast.BinaryOperator,Char,String]"></a>
+      <a id="logicOperator:Parser[LogicOperatorwithBinaryOperator,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logicOperator</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<a href="../ast/LogicOperator.html" class="extype" name="com.tecsisa.lightql.ast.LogicOperator">LogicOperator</a> with <a href="../ast/BinaryOperator.html" class="extype" name="com.tecsisa.lightql.ast.BinaryOperator">BinaryOperator</a>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@logicOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.LogicOperatorwithcom.tecsisa.lightql.ast.BinaryOperator,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Operators#matchingOperator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="matchingOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.MatchingOperator,Char,String]"></a>
+      <a id="matchingOperator:Parser[MatchingOperator,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">matchingOperator</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<a href="../ast/MatchingOperator.html" class="extype" name="com.tecsisa.lightql.ast.MatchingOperator">MatchingOperator</a>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@matchingOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.MatchingOperator,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#monospaced" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="monospaced[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[T]"></a>
+      <a id="monospaced[T](fastparse.all.Parser[T]):fastparse.all.Parser[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">monospaced</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="com.tecsisa.lightql.parser.BasicParsers.monospaced.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="com.tecsisa.lightql.parser.BasicParsers.monospaced.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@monospaced[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Operators#numericOperator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numericOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.BinaryOperator,Char,String]"></a>
+      <a id="numericOperator:Parser[BinaryOperator,Char,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numericOperator</span><span class="result">: <span class="extype" name="fastparse.core.Parser">Parser</span>[<a href="../ast/BinaryOperator.html" class="extype" name="com.tecsisa.lightql.ast.BinaryOperator">BinaryOperator</a>, <span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@numericOperator:fastparse.core.Parser[com.tecsisa.lightql.ast.BinaryOperator,Char,String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#oneSpaceAtLeast" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="oneSpaceAtLeast:fastparse.all.Parser[Unit]"></a>
+      <a id="oneSpaceAtLeast:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">oneSpaceAtLeast</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@oneSpaceAtLeast:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#openBracket" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="openBracket:fastparse.all.Parser[Unit]"></a>
+      <a id="openBracket:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">openBracket</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@openBracket:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#openParen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="openParen:fastparse.all.Parser[Unit]"></a>
+      <a id="openParen:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">openParen</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@openParen:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#openParenLah" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="openParenLah:fastparse.all.Parser[Unit]"></a>
+      <a id="openParenLah:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">openParenLah</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@openParenLah:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#parenBlock" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parenBlock[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[Vector[T]]"></a>
+      <a id="parenBlock[T](fastparse.all.Parser[T]):fastparse.all.Parser[Vector[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parenBlock</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="com.tecsisa.lightql.parser.BasicParsers.parenBlock.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="com.tecsisa.lightql.parser.BasicParsers.parenBlock.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@parenBlock[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[Vector[T]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.Helpers#parseDate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parseDate(date:String):org.joda.time.DateTime"></a>
+      <a id="parseDate(String):DateTime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseDate</span><span class="params">(<span name="date">date: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@parseDate(date:String):org.joda.time.DateTime" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Helpers.html" class="extype" name="com.tecsisa.lightql.parser.Helpers">Helpers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#quoted" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="quoted[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[String]"></a>
+      <a id="quoted[T](fastparse.all.Parser[T]):fastparse.all.Parser[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">quoted</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="com.tecsisa.lightql.parser.BasicParsers.quoted.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@quoted[T](p:fastparse.all.Parser[T]):fastparse.all.Parser[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#seconds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="seconds:fastparse.all.Parser[Unit]"></a>
+      <a id="seconds:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">seconds</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@seconds:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#space" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="space:fastparse.all.Parser[Unit]"></a>
+      <a id="space:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">space</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@space:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#time" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="time:fastparse.all.Parser[Unit]"></a>
+      <a id="time:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">time</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@time:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#tz" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tz:fastparse.all.Parser[Unit]"></a>
+      <a id="tz:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tz</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@tz:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.tecsisa.lightql.parser.BasicParsers#year" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="year:fastparse.all.Parser[Unit]"></a>
+      <a id="year:fastparse.all.Parser[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">year</span><span class="result">: <span class="extype" name="fastparse.Api.Parser">fastparse.all.Parser</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.tecsisa.lightql.parser.LightqlParser@year:fastparse.all.Parser[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="com.tecsisa.lightql.parser.Operators">
+              <h3>Inherited from <a href="Operators.html" class="extype" name="com.tecsisa.lightql.parser.Operators">Operators</a></h3>
+            </div><div class="parent" name="com.tecsisa.lightql.parser.BasicParsers">
+              <h3>Inherited from <a href="BasicParsers.html" class="extype" name="com.tecsisa.lightql.parser.BasicParsers">BasicParsers</a></h3>
+            </div><div class="parent" name="com.tecsisa.lightql.parser.Helpers">
+              <h3>Inherited from <a href="Helpers.html" class="extype" name="com.tecsisa.lightql.parser.Helpers">Helpers</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
