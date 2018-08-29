@@ -36,6 +36,7 @@ private[parser] trait BasicParsers extends Helpers {
   protected[this] val tz         = P((("-" | "+") ~ dMHms ~ ":" ~ dMHms) | "Z")
   protected[this] val dateFormat = P(year ~ "-" ~ dMHms ~ "-" ~ dMHms ~ time.? ~ tz.?)
   protected[this] val date       = dateFormat.!.map(parseDate)
+  protected[this] val localDate  = P(year ~ "-" ~ dMHms ~ "-" ~ dMHms ~ End).!.map(parseLocalDate)
 
   // A sequence of chars
   protected[this] val charSeq = P(CharIn('A' to 'Z', 'a' to 'z', '0' to '9', "_-"))

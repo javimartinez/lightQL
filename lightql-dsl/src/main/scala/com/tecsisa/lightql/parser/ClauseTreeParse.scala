@@ -19,7 +19,7 @@ private[parser] case object ClauseTreeParse
     with Operators
     with BasicParsers {
 
-  val element = P(date | double | integer | quoted(CharPred(_ != '"').rep))
+  val element = P(localDate | date | double | integer | quoted(CharPred(_ != '"').rep))
   val field   = P(charSeq.rep(sep = ("." | "->").?)).!
   val value   = P(list(element) | element)
   val clause = P(field ~ clauseOperator ~ value).map {
