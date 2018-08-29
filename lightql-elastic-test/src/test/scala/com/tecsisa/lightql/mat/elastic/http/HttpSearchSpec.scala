@@ -24,6 +24,7 @@ class HttpSearchSpec extends BaseSearchSpec with Matchers {
       search("songs") query q("genre != \"Classical\"") should haveTotalHits(7)
       search("songs") query q("date.full = 2016-02-06") should haveTotalHits(1)
       search("songs") query q("stats->rate.stars = 5.0") should haveTotalHits(2)
+      search("songs") query q("date.yearMonthDay = 2016-02-06") should haveTotalHits(1)
     }
     "find exact results in queries with multiple values" in {
       search("songs") query q("composer = [\"Johann Sebastian Bach\", \"Radiohead\"]") should haveTotalHits(
