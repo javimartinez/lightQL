@@ -8,7 +8,7 @@ package parser
 import com.github.nscala_time.time.Imports.DateTime
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.DateTimeZone.UTC
-import org.joda.time.LocalDate
+import org.joda.time.{ LocalDate, YearMonth }
 
 private[parser] trait Helpers {
   // Wraps a function with a name
@@ -27,8 +27,13 @@ private[parser] trait Helpers {
   protected[this] val dateTimeFormatter = ISODateTimeFormat.dateTimeParser().withZone(UTC)
 
   // A function for parse dates
-  protected[this] def parseDate(date: String) = DateTime.parse(date, dateTimeFormatter)
+  protected[this] def parseDateTime(dateTime: String) = DateTime.parse(dateTime, dateTimeFormatter)
 
-  protected[this] def parseLocalDate(yearMonthDay: String): LocalDate =
-    LocalDate.parse(yearMonthDay)
+  // A function for parse LocalDates
+  protected[this] def parseLocalDate(localDate: String): LocalDate =
+    LocalDate.parse(localDate)
+
+  // A function for parse YearMonths
+  protected[this] def parseYearMonth(yearMonth: String): YearMonth =
+    YearMonth.parse(yearMonth)
 }
